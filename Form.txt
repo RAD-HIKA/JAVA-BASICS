@@ -1,0 +1,70 @@
+import java.awt.*;  
+public class Form extends Frame {  
+  
+Form(){  
+Label Name  = new Label("Name");  
+Name.setBounds(20, 50, 80, 20);  
+  
+Label Roll_no  = new Label("Roll no");  
+Roll_no.setBounds(20, 80, 80, 20);  
+  
+Label Branch = new Label("Branch");  
+Branch.setBounds(20, 110, 80, 20);  
+  
+Label Contact = new Label("Contact");  
+Contact.setBounds(20, 140, 80, 20);  
+
+Label Gender = new Label("Gender");  
+Gender.setBounds(20, 170, 80, 20);  
+
+Label City = new Label("City");  
+City.setBounds(20, 200, 80, 20);  
+  
+  
+  
+name= new TextField();  
+name.setBounds(120, 50, 100, 20);  
+  
+rollnumber= new TextField();  
+rollnumber.setBounds(120, 80, 100, 20);  
+  
+branch= new TextField();  
+branch.setBounds(120, 110, 100, 20); 
+
+contact= new TextField();  
+contact.setBounds(120, 140, 100, 20); 
+
+rb1=new RadioButton("Male");    
+rb1.setBounds(120,170,100,20);      
+rb2=new RadioButton("Female");    
+rb2.setBounds(180,170,100,20);   
+
+city= new TextField();  
+city.setBounds(120, 200, 100, 20); 
+
+
+Button sbmt = new Button("Submit");  
+sbmt.setBounds(20, 160, 100, 30);  
+  
+Button reset = new Button("Reset");  
+reset.setBounds(120,160,100,30);  
+  
+add(name);  
+add(rollnumber);  
+add(branch);  
+add(contact);  
+add(rb1);
+add(rb2);  
+add(city);  
+add(sbmt);  
+add(reset);  
+  
+setSize(300,300);  
+setLayout(null);  
+setVisible(true);  
+}  
+public static void main(String[] args) {  
+
+Form a = new Form();    
+}  
+}  
